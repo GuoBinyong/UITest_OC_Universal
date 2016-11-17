@@ -26,6 +26,7 @@
 		1D00ECC71DDBFA13001D6353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D00ECCD1DDC0000001D6353 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		1D00ECCE1DDC0000001D6353 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		1D14209B1DDD339900804A58 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 				1D00ECC41DDBFA13001D6353 /* LaunchScreen.storyboard */,
 				1D00ECC71DDBFA13001D6353 /* Info.plist */,
 				1D00ECB61DDBFA13001D6353 /* Supporting Files */,
+				1D14209B1DDD339900804A58 /* PrefixHeader.pch */,
 			);
 			path = UITest_OC_Universal;
 			sourceTree = "<group>";
@@ -272,6 +274,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UITest_OC_Universal/PrefixHeader.pch";
 				INFOPLIST_FILE = UITest_OC_Universal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guobinyong.UITest-OC-Universal";
@@ -283,6 +287,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UITest_OC_Universal/PrefixHeader.pch";
 				INFOPLIST_FILE = UITest_OC_Universal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guobinyong.UITest-OC-Universal";
@@ -309,6 +315,7 @@
 				1D00ECCC1DDBFA13001D6353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
